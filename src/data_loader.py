@@ -44,3 +44,25 @@ class MortgageDataLoader:
         }
         
         return self.load_fred_data(indicators)
+
+class EconomicDataCollector2018:
+    def __init__(self):
+        self.start_date = '2018-01-01'
+        self.end_date = '2024-12-31'
+        self.collected_data = {}
+        
+    def get_recent_macro_indicators(self):
+        """Get macroeconomic indicators for 2018-2024 period"""
+        indicators = {
+            'GDP': 'GDP',
+            'UNRATE': 'UNRATE',
+            'CSUSHPINSA': 'CSUSHPINSA',
+            'MORTGAGE30US': 'MORTGAGE30US',
+            'DSPIC96': 'DSPIC96',
+            'UMCSENT': 'UMCSENT',
+            'HOUST': 'HOUST',
+            'FEDFUNDS': 'FEDFUNDS',
+            'PAYEMS': 'PAYEMS'  # Nonfarm payrolls
+        }
+        
+        return self.load_fred_data(indicators)
