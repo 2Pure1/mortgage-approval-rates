@@ -42,7 +42,7 @@ mortgage-approval-model/
 1. Install dependencies: `pip install -r requirements.txt`
 2. Run notebooks in sequence:
    - `01_data_collection.ipynb`
-   - `02_data_cleaning.ipynb` 
+   - `02_economic_data_cleaning.ipynb` 
    - `03_exploratory_analysis.ipynb`
    - `04_model_building.ipynb`
    - `05_forecasting.ipynb`
